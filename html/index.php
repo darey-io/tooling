@@ -43,7 +43,7 @@
 		<?php endif ?>
 		<!-- logged in user information -->
 		<div class="profile_info">
-			<img src="images/user_profile.png"  >
+		<!--	<img src="images/user_profile.png"  > -->
 
 			<div>
 				<?php  if (isset($_SESSION['user'])) : ?>
@@ -67,7 +67,7 @@
 
     <div class="Logo">
 
-        <a href="tooling.html">
+        <a href="index.php">
             <img src="img/logo-propitix.png" alt="" width="220" height="150">
             </a>
     </div>
@@ -80,13 +80,13 @@
     
     <div class="container">
         <div class="box">
-            <a href="http://poc.tooling.jenkins.propitix.io/">
+            <a href="http://poc.tooling.jenkins.propitix.io/" target="_blank" >
                 <img src="img/jenkins.png" alt="Snow" width="400" height="150">
             </a>
         </div>
 
         <div class="box">
-            <a href="http://poc.tooling.grafana.propitix.io/">
+            <a href="http://poc.tooling.grafana.propitix.io/" target="_blank" >
                 <img src="img/grafana.png" alt="Snow2" width="400" height="150">
             </a>
 
@@ -94,7 +94,7 @@
         </div>
 
         <div class="box">
-            <a href="http://poc.tooling.rancher.propitix.io/">
+            <a href="http://poc.tooling.rancher.propitix.io/" target="_blank" >
                 <img src="img/rancher.png" alt="Snow" width="400" height="150">
             </a>
         </div>
@@ -103,20 +103,20 @@
     </div>
      <div class="container">
         <div class="box">
-            <a href="http://poc.tooling.prometheus.propitix.io/">
+            <a href="http://poc.tooling.prometheus.propitix.io/" target="_blank" >
                 <img src="img/prometheus.png" alt="Snow" width="400" height="150">
             </a>
         </div>
 
         <div class="box">
-            <a href="http://poc.tooling.kubernetes.propitix.io/">
+            <a href="http://poc.tooling.kubernetes.propitix.io/" target="_blank" >
                 <img src="img/kubernetes.png" alt="Snow" width="400" height="120">
             </a>
 
         </div>
 
         <div class="box">
-            <a href="http://poc.tooling.kibana.propitix.io/">
+            <a href="http://poc.tooling.kibana.propitix.io/" target="_blank" >
                 <img src="img/kibana.png" alt="Snow" width="400" height="100">
             </a>
         </div>
@@ -126,7 +126,7 @@
 
     <div class="container">
         <div class="box">
-            <a href="http://poc.tooling.artifactory.propitix.io/">
+            <a href="http://poc.tooling.artifactory.propitix.io/" target="_blank" >
                 <img src="img/jfrog.png" alt="snow" width="400" height="100">
             </a>
 
