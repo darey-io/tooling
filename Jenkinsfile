@@ -6,19 +6,6 @@ pipeline {
         cleanWs()
       }
     }
-
-
-    stage('Checkout'){
-            steps {
-            checkout([$class: 'GitSCM', 
-            branches: [[name: '*/feature/dockerise']], 
-            doGenerateSubmoduleConfigurations: false, 
-            extensions: [], 
-            submoduleCfg: [], 
-            userRemoteConfigs: [[url: 'https://gitlab.com/propitix/infrastructure/custom-development/tooling-website.git']]])
-
-            }
-        }
     
     stage('Build') {
       steps {
