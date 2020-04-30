@@ -48,6 +48,7 @@ pipeline {
       }
     }
 
+    stage('Post Deployment') {
         post {
         always {
             echo 'This will always run'
@@ -67,4 +68,5 @@ pipeline {
         }
     }
   }
+}
 }
