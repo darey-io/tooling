@@ -5,6 +5,10 @@ pipeline {
       steps {
         cleanWs()
       }
+        script {
+          // Clean Up
+          sh 'echo "cleaning Up workspace"'
+        }
     }
     
     stage('Build') {
