@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registration system PHP and MySQL</title>
+	<title>Propitix Tooling Login</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -19,14 +19,14 @@
 		</div>
 		<div class="input-group">
 			<label>Password</label>
-			<input type="password" name="password">
+			<input type="password" name="password" pattern=".{8,16}" placeholder=" Password Must Be 8 Characters" >
 		</div>
 		<div class="input-group">
 			<button type="submit" class="btn" name="login_btn">Login</button>
 		</div>
-		<p>
+	<!--	<p>
 			Not yet a member? <a href="register.php">Sign up</a>
-		</p>
+		</p> -->
 	</form>
 </body>
 </html>
