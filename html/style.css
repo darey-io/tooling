@@ -5,14 +5,14 @@
 
 body {
     font-size: 120%;
-    background: #F8F8FF;
+    background: rgb(160, 160, 173);
 }
 
 .header {
     width: 40%;
     margin: 50px auto 0px;
     color: white;
-    background: #5F9EA0;
+    background: rgb(26, 65, 122);
     text-align: center;
     border: 1px solid #B0C4DE;
     border-bottom: none;
@@ -26,7 +26,7 @@ form,
     margin: 0px auto;
     padding: 20px;
     border: 1px solid #B0C4DE;
-    background: white;
+    background: rgb(219, 217, 217);
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -63,7 +63,7 @@ form,
     padding: 10px;
     font-size: 15px;
     color: white;
-    background: #5F9EA0;
+    background: rgb(9, 117, 240);
     border: none;
     border-radius: 5px;
 }
