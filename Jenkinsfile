@@ -3,12 +3,13 @@ pipeline {
   stages {
     stage('Clean Workspace'){
       steps {
-        cleanWs()
-      }
-        script {
+          script {
           // Clean Up
           sh 'echo "cleaning Up workspace"'
         }
+        cleanWs()
+
+      }
     }
     
     stage('Build') {
@@ -16,6 +17,7 @@ pipeline {
         script {
           // Build
           sh 'echo "Building Stage"'
+          sh 'echo "Current Directory" ls -latr'
         }
       }
     }
