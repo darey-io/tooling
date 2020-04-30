@@ -22,11 +22,11 @@
 	</div>
 	<div class="input-group">
 		<label>Password</label>
-		<input type="password" name="password_1">
+		<input type="password" name="password_1" pattern=".{8,16}" placeholder=" Password Must Be 8 Characters" >
 	</div>
 	<div class="input-group">
 		<label>Confirm password</label>
-		<input type="password" name="password_2">
+		<input type="password" name="password_2" pattern=".{8,16}" placeholder=" Password Must Be 8 Characters" >
 	</div>
 	<div class="input-group">
 		<button type="submit" class="btn" name="register_btn">Register</button>
