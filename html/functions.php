@@ -50,7 +50,7 @@ function register(){
 					  VALUES('$username', '$email', '$user_type', '$password')";
 			mysqli_query($db, $query);
 			$_SESSION['success']  = "New user successfully created!!";
-			header('location: home.php');
+			header('location: admin_tooling.php');
 		}else{
 			$query = "INSERT INTO users (username, email, user_type, password) 
 					  VALUES('$username', '$email', 'user', '$password')";
@@ -144,7 +144,7 @@ function login(){
 
 				$_SESSION['user'] = $logged_in_user;
 				$_SESSION['success']  = "You are now logged in";
-				header('location: admin/home.php');		  
+				header('location: admin_tooling.php');		  
 			}else{
 				$_SESSION['user'] = $logged_in_user;
 				$_SESSION['success']  = "You are now logged in";
@@ -165,3 +165,6 @@ function isAdmin()
 		return false;
 	}
 }
+
+
+
