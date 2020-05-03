@@ -1,8 +1,10 @@
 pipeline {
-  agent   docker {
+    agent {
+        docker {
             image 'docker:latest'
             // args '-v /root/.m2:/root/.m2'
         }
+    }
   stages {
     stage('Clean Workspace'){
       steps {
