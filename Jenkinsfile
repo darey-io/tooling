@@ -1,5 +1,8 @@
 pipeline {
-  agent any
+  agent   docker {
+            image 'docker:latest'
+            // args '-v /root/.m2:/root/.m2'
+        }
   stages {
     stage('Clean Workspace'){
       steps {
@@ -17,7 +20,7 @@ pipeline {
         script {
           // Build
           sh 'echo "Building Stage"'
-          sh 'docker build .' 
+          sh 'pwd' 
         }
       }
     }
