@@ -12,33 +12,33 @@ pipeline {
       }
     }
     
-    stage('Build') {
-      steps {
-        script {
-          // Build
-          sh 'echo "Building Stage"'
-          sh 'echo "Current Directory"' 
-        }
-      }
-    }
+//     stage('Build') {
+//       steps {
+//         script {
+//           // Build
+//           sh 'echo "Building Stage"'
+//           sh 'echo "Current Directory"' 
+//         }
+//       }
+//     }
 
 
-    stage('Test') {
-      steps {
-        script {
-          // Build
-          sh 'echo "Testing Stage"'
-        }
-      }
-    }
+//     stage('Test') {
+//       steps {
+//         script {
+//           // Build
+//           sh 'echo "Testing Stage"'
+//         }
+//       }
+//     }
 
-    stage('Deploy') {
-      steps {
-        script {
-          // Build
-          sh 'echo "Deploy Stage"'
-        }
-      }
-    }
-  }
-}
+//     stage('Deploy') {
+//       steps {
+//         script {
+//           // Build
+//           sh 'echo "Deploy Stage"'
+//         }
+//       }
+//     }
+//   }
+// }
