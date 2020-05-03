@@ -7,7 +7,7 @@ pipeline {
           // Clean Up
           sh 'echo "cleaning Up workspace"'
         }
-        cleanWs()
+        // cleanWs()
 
       }
     }
