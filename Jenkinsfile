@@ -17,7 +17,7 @@ pipeline {
         script {
           // Build
           sh 'echo "Building Stage"'
-          sh 'echo "Current Directory"' 
+          sh 'docker build .' 
         }
       }
     }
