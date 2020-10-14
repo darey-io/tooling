@@ -2,7 +2,17 @@
 session_start();
 
 // connect to database
-$db = mysqli_connect('localhost', 'root', '', 'multi_login');
+$db = mysqli_connect('35.179.74.124', 'tooling', 'tooling', 'toolingdb');
+
+
+// Check connection
+if (mysqli_connect_errno()) {
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+exit();
+}
+else{
+echo "connected";
+}
 
 // variable declaration
 $username = "";
@@ -165,6 +175,5 @@ function isAdmin()
 		return false;
 	}
 }
-
 
 
