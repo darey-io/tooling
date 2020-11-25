@@ -2,7 +2,7 @@
 session_start();
 
 // connect to database
-$db = mysqli_connect('mysql', 'tooling', 'tooling', 'toolingdb');
+$db = mysqli_connect('mysql', 'admin', 'admin', 'tooling');
 
 
 // Check connection
