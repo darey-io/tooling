@@ -19,7 +19,7 @@
 		</div>
 		<div class="input-group">
 			<label>Password</label>
-			<input type="password" name="password" pattern=".{8,16}" placeholder=" Password Must Be 8 Characters" >
+			<input type="password" name="password" pattern=".{4,8}" placeholder=" Password Must Be 4 Characters" >
 		</div>
 		<div class="input-group">
 			<button type="submit" class="btn" name="login_btn">Login</button>
