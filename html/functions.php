@@ -2,17 +2,16 @@
 session_start();
 
 // connect to database
-$db = mysqli_connect('35.179.74.124', 'tooling', 'tooling', 'toolingdb');
-
+$db = mysqli_connect('mysql.tooling.svc.cluster.local', 'admin', 'admin', 'tooling');
 
 // Check connection
-if (mysqli_connect_errno()) {
-echo "Failed to connect to MySQL: " . mysqli_connect_error();
-exit();
-}
-else{
-echo "connected";
-}
+// if (mysqli_connect_errno()) {
+// echo "Failed to connect to MySQL: " . mysqli_connect_error();
+// exit();
+// }
+// else{
+// echo "connected";
+// }
 
 // variable declaration
 $username = "";
