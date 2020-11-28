@@ -69,10 +69,6 @@ pipeline {
     stage('Docker build') {
                when {
                 expression { BRANCH_NAME ==~ /(dev)/ }
-                // anyOf {
-                    // environment name: 'DEPLOY_TO', value: 'development'
-                    // environment name: 'DEPLOY_TO', value: 'staging'
-                // }
             }
         steps {
             echo 'Build Dockerfile....'
@@ -85,6 +81,41 @@ pipeline {
             }
             }
         }
+
+               when {
+                expression { BRANCH_NAME ==~ /(staging|master)/ }
+            }
+        steps {
+            echo 'Build Dockerfile....'
+            script {
+                sh("eval \$(aws ecr get-login --no-include-email --region eu-central-1 | sed 's|https://||')") 
+                // sh "docker build --network=host -t $IMAGE -f deploy/docker/Dockerfile ."
+                sh "docker build --network=host -t $IMAGE ."
+                docker.withRegistry("https://$ECRURL"){
+                docker.image("$IMAGE").push("staging-$BUILD_NUMBER")
+            }
+            }
+        }
+
+               when {
+                expression { BRANCH_NAME ==~ /(release)/ }
+            }
+        steps {
+            echo 'Build Dockerfile....'
+            script {
+                sh("eval \$(aws ecr get-login --no-include-email --region eu-central-1 | sed 's|https://||')") 
+                // sh "docker build --network=host -t $IMAGE -f deploy/docker/Dockerfile ."
+                sh "docker build --network=host -t $IMAGE ."
+                docker.withRegistry("https://$ECRURL"){
+                docker.image("$IMAGE").push("prod-$BUILD_NUMBER")
+            }
+            }
+        }
+
+
+
+
+
       }
       // stage('Update Helm appVersion') {
       //   steps {
