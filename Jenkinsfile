@@ -81,6 +81,12 @@ pipeline {
             }
             }
         }
+      }
+
+
+
+
+
     stage('Build For Staging Environment') {
                when {
                 expression { BRANCH_NAME ==~ /(staging|master)/ }
@@ -99,7 +105,14 @@ pipeline {
     }
 
 
-      }
+
+
+
+
+
+
+
+
       // stage('Update Helm appVersion') {
       //   steps {
       //       echo 'Update appVersion'
