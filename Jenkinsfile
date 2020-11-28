@@ -83,10 +83,6 @@ pipeline {
         }
       }
 
-
-
-
-
     stage('Build For Staging Environment') {
                when {
                 expression { BRANCH_NAME ==~ /(staging|master)/ }
@@ -104,6 +100,21 @@ pipeline {
         }
     }
 
+
+    stage('Build For Production Environment') {
+        when { tag "release-*" }
+        steps {
+            echo 'Build Dockerfile....'
+            script {
+                sh("eval \$(aws ecr get-login --no-include-email --region eu-central-1 | sed 's|https://||')") 
+                // sh "docker build --network=host -t $IMAGE -f deploy/docker/Dockerfile ."
+                sh "docker build --network=host -t $IMAGE ."
+                docker.withRegistry("https://$ECRURL"){
+                docker.image("$IMAGE").push("prod-$BUILD_NUMBER")
+            }
+            }
+        }
+    }
 
 
 
