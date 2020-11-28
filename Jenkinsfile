@@ -5,7 +5,7 @@ pipeline {
     {
         PROJECT     = 'zooto-tooling-prod'
         ECRURL      = '059636857273.dkr.ecr.eu-central-1.amazonaws.com'
-        ENVIRONMENT = 'dev'
+        DEPLOY_TO = 'development'
     }
 
   stages {
@@ -67,6 +67,13 @@ pipeline {
         }
 
     stage('Docker build') {
+               when {
+                expression { BRANCH_NAME ==~ /(dev)/ }
+                // anyOf {
+                    // environment name: 'DEPLOY_TO', value: 'development'
+                    // environment name: 'DEPLOY_TO', value: 'staging'
+                // }
+            }
         steps {
             echo 'Build Dockerfile....'
             script {
@@ -74,7 +81,7 @@ pipeline {
                 // sh "docker build --network=host -t $IMAGE -f deploy/docker/Dockerfile ."
                 sh "docker build --network=host -t $IMAGE ."
                 docker.withRegistry("https://$ECRURL"){
-                docker.image("$IMAGE").push("$BUILD_NUMBER")
+                docker.image("$IMAGE").push("dev-$BUILD_NUMBER")
             }
             }
         }
