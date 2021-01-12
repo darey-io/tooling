@@ -1,0 +1,7 @@
+--- 
+  - hosts: all
+    become: true 
+    tasks:
+    - name: display the hostname of the machines present
+      command: hostname
+
