@@ -33,7 +33,7 @@ Update the application code
 Then add/commit/push to gitlab now
 
 ```
-git status # to see your changes
+git status # This will help to see your changes
 ```
 
 ```
