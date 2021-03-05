@@ -30,7 +30,7 @@ Update the application code
 ./html/
 ```
 
-Then add/commit/push to gitlab
+Then add/commit/push to gitlab now
 
 ```
 git status # to see your changes
