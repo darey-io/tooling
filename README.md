@@ -44,7 +44,7 @@ git add --all # If you are satisfied with your changes and willing to push every
 git commit -m "Put some message about this push here"
 ```
 
-## Push your changes to gitlab, and merge to dev branch
+## Push your changes to gitlab, and merge to dev branch.. whevtvtyver ybvey8rv vbyrevb
 ```
 git push --set-upstream origin feature/[Your branch name]
 ```
