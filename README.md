@@ -25,7 +25,7 @@ git branch -b feature/add-css-style-to-about-us-page
 ```
 
 
-Update the application code 
+Update the application code at this point
 ```
 ./html/
 ```
