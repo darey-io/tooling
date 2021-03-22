@@ -18,7 +18,7 @@ The build is automatically triggered by a git push to your feature/[branch]
 $ git clone https://gitlab.com/propitix/microservices/php-frontend.git
 $ cd frontend-propitix
 ```
-## we are trying to do some automation right now. I AM SURE YOU RE INTERESTED
+## we are trying to do some automation right now. I AM SURE YOU RE INTERESTED. Please note we are making changing on our backup project
 Create a feature branch. # Always start with feature/[name of your branch]
 ```
 git branch -b feature/add-css-style-to-about-us-page
