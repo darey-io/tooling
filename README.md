@@ -72,9 +72,5 @@ Default web root:
 ```
 
 ## If you require permissions to GCP, or Gitlab resources, please talk to dare@propitix.com
-## Sample Changes from Project9_031121_trial
-## Test 1
-## Test 2
-## Test 3,4,5,6,7,8
-## Working Directory1
+## Chapter 12
 
