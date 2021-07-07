@@ -82,3 +82,5 @@ Default web root:
 ## I am in the blocker session
 
 ## Lets trigger you here
+
+## EC@ has power
