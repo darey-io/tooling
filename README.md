@@ -78,3 +78,5 @@ Default web root:
 ## This is the new update
 
 ## I have updated the SSH Plugin
+
+## I am in the blocker session
