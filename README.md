@@ -76,3 +76,5 @@ Default web root:
 ## This is an update to Jenkins
 
 ## This is the new update
+
+## I have updated the SSH Plugin
