@@ -72,3 +72,19 @@ Default web root:
 ```
 
 ## If you require permissions to GCP, or Gitlab resources, please talk to dare@propitix.com
+
+## This is an update to Jenkins
+
+## This is the new update
+
+## I have updated the SSH Plugin
+
+## I am in the blocker session
+
+## Lets trigger you here
+
+## EC@ has power
+
+## THis is a trigger for ansible
+
+## Triger Artifacts
