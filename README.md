@@ -74,4 +74,4 @@ Default web root:
 ## If you require permissions to GCP, or Gitlab resources, please talk to dare@propitix.com
 
 ## Making changes to the github repository for continuous delivivery with jenkins
-## What is happening 
+## What is happening here
