@@ -73,4 +73,4 @@ Default web root:
 
 ## If you require permissions to GCP, or Gitlab resources, please talk to dare@propitix.com
 
-## Changing the code to know the effects on webhooks
+## This is a new jenkins server 
