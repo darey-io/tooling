@@ -77,3 +77,5 @@ Default web root:
 
 ## Publish over SSH 
 * This publish the files over the SSH 
+* This publish the files over the SSH 
+* This publish the files over the SSH 
