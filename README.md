@@ -76,4 +76,4 @@ Default web root:
 ## Applying new configurations to the jenkins
 
 ## Publish over SSH 
-* This is to publish files over ssh , copying files 
+* Having issues sending the files, there is ownership issue on the /mnt/apps folder
