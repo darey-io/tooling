@@ -76,6 +76,4 @@ Default web root:
 ## Applying new configurations to the jenkins
 
 ## Publish over SSH 
-* This publish the files over the SSH 
-* This publish the files over the SSH 
-* This publish the files over the SSH 
+* This is to publish files over ssh , copying files 
