@@ -72,3 +72,8 @@ Default web root:
 ```
 
 ## If you require permissions to GCP, or Gitlab resources, please talk to dare@propitix.com
+
+## Applying new configurations to the jenkins
+
+## Publish over SSH 
+* Having issues sending the files, there is ownership issue on the /mnt/apps folder
