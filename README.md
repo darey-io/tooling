@@ -72,4 +72,4 @@ Default web root:
 ```
 
 ## If you require permissions to GCP, or Gitlab resources, please talk to dare@propitix.com
-### Jenkins Configuration is working and Now Saved in NFS Server
+### Jenkins Configuration is working and Now the Saved the tooling app into NFS Server
