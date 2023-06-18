@@ -57,7 +57,7 @@ git push --set-upstream origin feature/[Your branch name]
 
 ## pulling the image
 ```
-docker pull eu.gcr.io/$environment/frontend-propitix:$tag-version
+docker pull eu.gcr.io/$environment/frontend-propitix:$tag-version. my first 
 ```
 
 ## Running (You can do this step without the pulling the above as it will put down if not found locally)
